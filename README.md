@@ -63,3 +63,8 @@ int main(void)
 
     return (0);
 }
+```
+## ouput
+```c
+Name: John      , Age: 25
+
