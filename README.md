@@ -1,4 +1,4 @@
-# Custom _printf Project
+# _printf
 
 ## Table of Contents
 1. [Description](#description)
@@ -14,7 +14,7 @@ The Custom _printf project is an implementation of the standard C library functi
 
 ## How to Use
 To use the custom `_printf` function in your C code, follow these steps:
-1. Include the "holberton.h" header file in your C source file.
+1. Include the "main.h" header file in your C source file.
 2. Call the `_printf` function in your code with the desired format string and arguments.
 
 ## Supported Conversion Specifiers
@@ -23,31 +23,31 @@ The custom `_printf` function supports the following conversion specifiers:
 - `%s` : String
 - `%i` or `%d` : Integer (signed decimal)
 - `%u` : Unsigned Integer (unsigned decimal)
-- `%o` : Octal
-- `%x` : Hexadecimal (lowercase)
-- `%X` : Hexadecimal (uppercase)
 - `%r` : Reverse the string (Rot13 encoding)
 - `%b` : Binary
 - `%R` : Rot13 encoding
 
 ## Function Descriptions
-1. `int _printf(const char *format, ...)`: This is the main function for formatted output. It takes a format string `format` and optional arguments, similar to `printf`.
+1. `int _putchar(char c);`: This is function used to write character to standard ouput by using unistd library
 
-2. `int print_char(va_list c, int width)`: Prints a character from the `va_list` with optional left justification using the `-` flag and field width.
+2. `int _putc(va_list c);`: This function is used to convert formated character and print it to standard output and returns count of characters printed
 
-3. `int print_string(va_list s, int width)`: Prints a string from the `va_list` with optional left justification using the `-` flag and field width.
+3. `int _puts(va_list s);`: This function is used to convert formated string and print it to standard output
 
-4. `int print_int(va_list i, int width)`: Prints a signed integer from the `va_list` with optional left justification using the `-` flag and field width.
+4. `int print_int(va_list number);`: This is the function used to convert and print decimals and integers and decimals
 
-5. `int print_unsigned(va_list u, int width)`: Prints an unsigned integer from the `va_list` with optional left justification using the `-` flag and field width.
+5. `int print_mod(void);`: This funnction prints second `%` if it comes after `%`
 
-6. `int print_octal(va_list o, int width)`: Prints an octal number from the `va_list` with optional left justification using the `-` flag and field width.
+6. `unsigned int get_binary_length(unsigned int num);`: This finction will get the length of binary printed to std output
 
-7. `int print_hex(va_list x, int width)`: Prints a hexadecimal number (lowercase) from the `va_list` with optional left justification using the `-` flag and field width.
+7. `int _printb(va_list args);`: This function will print binary by using binary length from `get_binary_length` function
 
-8. `int print_rot13(va_list R, int width)`: Prints a string in Rot13 encoding from the `va_list` with optional left justification using the `-` flag and field width.
+8. `int print_rev(va_list str);`: This will reverse given string and print it out
 
-9. `int print_binary(va_list b, int width)`: Prints a binary number from the `va_list` with optional left justification using the `-` flag and field width.
+9. `int print_rot13(va_list R);`: Prints string in Rot13 enncoding from `va_list`
+
+10. `int _printf(const char *format, ...)`: This is the main function for formatted output. It takes a format string `format` and optional arguments, similar to `printf`.
+
 
 ## Example Usage
 ```c
@@ -59,12 +59,12 @@ int main(void)
     char *name = "John";
     int age = 25;
 
-    _printf("Name: %-10s, Age: %d\n", name, age);
+    _printf("Name: %s, Age: %d\n", name, age);
 
     return (0);
 }
 ```
 ## ouput
 ```c
-Name: John      , Age: 25
+Name: John, Age: 25
 
