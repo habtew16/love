@@ -8,6 +8,7 @@
 5. [Example Usage](#example-usage)
 6. [Contributing](#contributing)
 7. [License](#license)
+8. [Contributors](#contributors)
 
 ## Description
 The Custom _printf project is an implementation of the standard C library function `printf`, which is used for formatted output to the standard output stream. This custom version, `_printf`, provides similar functionality to the standard `printf` function and supports various format specifiers.
@@ -68,3 +69,8 @@ int main(void)
 ```c
 Name: John, Age: 25
 
+```
+
+## Contributors
+- [Habtamu Gebre](https://github.com/habtew16)
+- [Sophia Odioko](https://github.com/Eloho23)
