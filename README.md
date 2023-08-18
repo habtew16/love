@@ -28,7 +28,23 @@ The Simple Shell Project is a command-line interpreter implemented in C, providi
 - Supports environment variables and command-line arguments.
 
 ## Getting Started
+## Getting Started
 
+Follow these steps to get started with the Simple Shell Project:
+
+1. **Clone the Repository**: Clone this repository to your local machine using the following command:
+
+   ```bash
+   git clone https://github.com/habtew/simple-shell.git
+   ```
+2. Compilation: Navigate to the project directory and compile the shell using the following command:
+   ```bash
+   gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+   ```
+3. Run the compiled executable
+  ```bash
+  ./hsh
+  ```
 ### Prerequisites
 
 Before compiling and running the shell, ensure you have the following:
