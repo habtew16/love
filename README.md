@@ -42,3 +42,89 @@ To compile the shell, use the following command:
 
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```
+## Functions
+
+### `_is_positive`
+
+Checks if a string represents a positive integer.
+
+### `_atoi`
+
+Converts a string to an integer.
+
+### `execute_line`
+
+Executes a line of commands.
+
+### `split_line`
+
+Splits a line into an array of strings.
+
+### `list_path`
+
+Creates a linked list of directory paths from the PATH environment variable.
+
+### `_setenv`
+
+Sets a new environment variable or modifies an existing one.
+
+### `_which`
+
+Finds the full path of a command.
+
+### `builtin_exit`
+
+Handles the built-in exit command.
+
+### `builtin_env`
+
+Handles the built-in env command.
+
+### `_getenv`
+
+Gets the value of an environment variable.
+
+### `_error`
+
+Prints error messages for command execution.
+
+### `handle_cases`
+
+Handles cases of command execution.
+
+### `add_node_end`
+
+Adds a new node at the end of a directory list.
+
+### `print_num`
+
+Prints a number followed by a newline.
+
+### `_strlen`
+
+Calculates the length of a string.
+
+### `_strcat`
+
+Concatenates two strings.
+
+### `_strdup`
+
+Duplicates a string.
+
+### `_strcmp`
+
+Compares two strings.
+
+### `free_loop`
+
+Frees a loop of pointers.
+
+### `free_list`
+
+Frees a linked list of directory paths.
+
+### `_strncpy`
+
+Copies a string up to `n` bytes.
