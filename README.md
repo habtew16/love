@@ -14,7 +14,6 @@ A simple shell project developed in C that provides basic shell functionalities.
 - [Built-in Functions](#built-in-functions)
 - [File Structure](#file-structure)
 - [Author](#author)
-- [License](#license)
 
 ## Introduction
 
@@ -143,3 +142,31 @@ Frees a linked list of directory paths.
 ### `_strncpy`
 
 Copies a string up to `n` bytes.
+
+# Commands
+
+## The shell supports standard Unix commands as well as some built-in functions:
+
+Run external commands: `ls`, `echo`, etc.
+Built-in commands: `exit`, `env`
+Built-in Functions
+`exit`: Terminate the shell.
+`env`: Display the current environment variables.
+File Structure
+The file structure of this project is organized as follows:
+```bash
+.
+├── shell.h          # Header file containing function declarations and structures
+├── shell.c           # Main entry point of the shell
+├── _string.c           # functions used for string operations
+├── helper_functions.c # Implementation of various helper functions
+├── builtins.c       # Implementation of built-in command functions
+├── _execute.c           # function to execute commands
+└── README.md        # Project documentation (you are here)
+```
+
+# Author
+```
+  Habtamu Gebre
+  Sophia Odioko
+```  
