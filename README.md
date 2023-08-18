@@ -28,7 +28,6 @@ The Simple Shell Project is a command-line interpreter implemented in C, providi
 - Supports environment variables and command-line arguments.
 
 ## Getting Started
-## Getting Started
 
 Follow these steps to get started with the Simple Shell Project:
 
